@@ -5,6 +5,7 @@ public class FruitStand {
 
   private double priceOfPeaches;
   private double priceOfCherys;
+  private double priceOfPears;
 
   private int number;
 
@@ -13,9 +14,11 @@ public class FruitStand {
   //Argless constructor for simplicity
   public FruitStand() {}
 
-  public FruitStand(double priceOfPeaches, double priceOfCherys, int number) {
+  public FruitStand(double priceOfPeaches, double priceOfCherys,double priceOfPears, int number) {
     this.priceOfCherys = priceOfCherys;
     this.priceOfPeaches = priceOfPeaches;
+    this.priceOfPears = priceOfPears;
+
     this.number = number;
   }
 
@@ -41,8 +44,18 @@ public class FruitStand {
     return number;
   }
 
+  public double getPriceOfPears() {
+    return priceOfPears;
+  }
+
+  public void setPriceOfPears(double priceOfPears) {
+    this.priceOfPears = priceOfPears;
+  }
+
   public void setNumber(int number) {
     this.number = number;
+
+
   }
 
 
